@@ -1,0 +1,745 @@
+@font-face {
+    font-family: 'google';
+    src: url('/planetart/fonts/ProductSans-Medium.woff') format('woff');
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'google', sans-serif;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.site-name,
+.nav-links,
+.welcome-message,
+.explore-main-text,
+.explore-sub-text,
+.index-card h5,
+.index-card p,
+.index-card button,
+.btn,
+.login  {
+    font-family: 'google', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px #0000001a; 
+    display: flex;
+    align-items: center;
+}
+
+.site-name {
+    font-weight: 500; 
+    margin-right: 5px;
+}
+
+.logo-img {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.welcome-message {
+    margin-right: 10px; 
+    margin-bottom: 0;  /* remove unwanted bottom margin */
+    font-size: 18px !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.dropdown-item:active {
+    background-color: #A9A9A9 !important;
+    color: #fff !important;
+}
+
+.btn-outline-secondary {
+    border: none !important;
+    color: #000 !important;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-outline-secondary:hover {
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+
+.current-page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    background-color: pink; 
+    bottom: 0;
+    left: 0;
+}
+
+.current-page:hover::after {
+    width: 0;
+}
+
+.nav-links {
+    margin-left: 10px;
+    font-size: 14px  !important;
+}
+
+.btn-outline-primary.login {
+    color: #FC8EAC;
+    border-color: #FC8EAC;
+    margin-right: 10px;
+}
+
+.btn-outline-primary.login:hover {
+    background-color: #FC8EAC;
+    color: #fff;
+    border-color: #FC8EAC;
+}
+
+.default-icon {
+    display: inline;
+}
+
+.hover-icon {
+    display: none;
+}
+
+.btn-outline-primary.login:hover .default-icon {
+    display: none;
+}
+
+.btn-outline-primary.login:hover .hover-icon {
+    display: inline;
+}
+
+.footer {
+    background-color: none;
+    margin-top: 30px;
+}
+
+.explore-desc {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.explore-main-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.explore-sub-text {
+    font-size: 18px;
+    color: #666;
+    max-width: 500px;
+}
+
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.explore-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.explore-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.explore-item:hover img {
+    transform: scale(1.1);
+}
+
+.explore-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.explore-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.explore-item h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.user-icon {
+    width: 23px;
+    height: 20px;
+    margin-right: 5px;
+    margin: 5px;
+}
+
+@font-face {
+    font-family: 'google';
+    src: url('/planetart/fonts/ProductSans-Medium.woff') format('woff');
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'google', sans-serif;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.site-name,
+.nav-links,
+.welcome-message,
+.explore-main-text,
+.explore-sub-text,
+.index-card h5,
+.index-card p,
+.index-card button,
+.btn,
+.login  {
+    font-family: 'google', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px #0000001a; 
+    display: flex;
+    align-items: center;
+}
+
+.site-name {
+    font-weight: 500; 
+    margin-right: 5px;
+}
+
+.logo-img {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-outline-secondary {
+    border: none !important;
+    color: #000 !important;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-outline-secondary:hover {
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+
+.current-page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    background-color: pink; 
+    bottom: 0;
+    left: 0;
+}
+
+.current-page:hover::after {
+    width: 0;
+}
+
+.nav-links {
+    margin-left: 10px;
+    font-size: 14px  !important;
+}
+
+.btn-outline-primary.login {
+    color: #FC8EAC;
+    border-color: #FC8EAC;
+    margin-right: 10px;
+}
+
+.btn-outline-primary.login:hover {
+    background-color: #FC8EAC;
+    color: #fff;
+    border-color: #FC8EAC;
+}
+
+.default-icon {
+    display: inline;
+}
+
+.hover-icon {
+    display: none;
+}
+
+.btn-outline-primary.login:hover .default-icon {
+    display: none;
+}
+
+.btn-outline-primary.login:hover .hover-icon {
+    display: inline;
+}
+
+.footer {
+    background-color: none;
+    margin-top: 30px;
+}
+
+.explore-desc {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.explore-main-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.explore-sub-text {
+    font-size: 18px;
+    color: #666;
+    max-width: 500px;
+}
+
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.explore-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.explore-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.explore-item:hover img {
+    transform: scale(1.1);
+}
+
+.explore-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.explore-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.explore-item h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.user-icon {
+    width: 23px;
+    height: 20px;
+    margin-right: 5px;
+    margin: 5px;
+}
+
+.index-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index-card img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.index-card:hover img {
+    transform: scale(1.1);
+}
+
+.index-card img {
+    width: 1000px;
+    height: 450px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.index-card:hover .card-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.card-content h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    border-color: #fff !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border-width: 2px !important;
+}
+
+.btn-explore:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.featured-artist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.featured-artist img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.latest-posts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+.post-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.art-gallery {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    border-radius: 10px;
+}
+
+.gallery-item-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.gallery-item-details h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cta-buttons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.background-image-index {
+    background-image: url('/planetart/images/chasbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background-colour {
+    background-color: #FAFAF7; 
+    padding: 40px 0;
+}
+
+.weekly-highlights {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+.highlight-background {
+    position: relative;
+    background-image: url('/planetart/images/ai-art.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.highlight-background::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.highlight-content {
+position: relative;
+z-index: 2;
+color: #fff;
+}
+
+.section-title {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.btn-primary {
+background-color: #fff;
+color: #000;
+border: none;
+padding: 10px 30px;
+font-size: 18px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.btn-primary:hover {
+background-color: #f2f2f2;
+}
+
+.explore-street-view {
+    text-align: center;
+    }
+
+.explore-street-view h2 {
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.explore-street-view p {
+font-size: 18px;
+color: #666;
+margin-bottom: 30px;
+}
+
+.explore-street-view .row {
+justify-content: center;
+}
+
+.explore-street-view .col-md-3 {
+position: relative;
+width: 300px;
+height: 300px;
+margin: 0 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+border-radius: 50%;
+overflow: hidden;
+}
+
+.explore-street-view .card {
+border: none;
+border-radius: 50%;
+width: 100%;
+height: 100%;
+}
+
+.explore-street-view .card-img-top {
+opacity: 0.7;
+}
+
+.explore-street-view .card-body {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+border-radius: 50%;
+width: 80%;
+height: 80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.explore-street-view .card-title {
+font-size: 24px; 
+margin-bottom: 5px;
+}
+
+.explore-street-view .card-text {
+font-size: 18px; 
+margin-bottom: 10px;
+color: #000;
+font-weight: 700;
+}
+
+.explore-street-view .btn-outline-light {
+background-color: transparent;
+border-color: white;
+color: white;
+font-size: 16px; 
+padding: 8px 16px; 
+}
+
+body {
+background-color: #f5f5f5;
+font-family: 'Montserrat', sans-serif;
+}
+
+.artform-card {
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.artform-header {
+background-color: #FC8EAC;
+color: #fff;
+padding: 20px;
+}
+
+.artform-header h2 {
+font-weight: 700;
+margin-bottom: 0;
+}
+
+.artform-body {
+padding: 30px;
+}
+
+.artform-label {
+font-weight: 600;
+color: #333;
+}
+
+.artform-input,
+.artform-textarea {
+border-radius: 5px;
+border: 1px solid #ddd;
+transition: border-color 0.3s ease;
+font-family: 'google', sans-serif;
+}
+
+.artform-input:focus,
+.artform-textarea:focus {
+border-color: #FC8EAC;
+box-shadow: none;
+}
+
+.artform-btn {
+background-color: #FC8EAC;
+border-color: #FC8EAC;
+color: #fff;
+font-weight: 600;
+padding: 10px 30px;
+border-radius: 20px;
+transition: background-color 0.3s ease, border-color 0.3s ease;
+font-family: 'google', sans-serif;
+}
+
+.artform-btn:hover {
+background-color: #FC8EAC;
+border-color: #FC8EAC;
+}
+
+.privacy-policy-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    transition: font-size 0.3s;
+}
+
+.privacy-policy-link:hover {
+    color: #000;
+    font-size: 18px;
+}

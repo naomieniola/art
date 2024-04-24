@@ -1,0 +1,1071 @@
+@font-face {
+    font-family: 'google';
+    src: url('/planetart/fonts/ProductSans-Medium.woff') format('woff');
+}
+
+/* keep footer down permanently */
+body {
+    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    font-family: 'google', sans-serif;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.site-name,
+.nav-links,
+.welcome-message,
+.explore-main-text,
+.explore-sub-text,
+.custom-card h5,
+.custom-card p,
+.custom-card button,
+.btn,
+.footer,
+.login {
+    font-family: 'google', sans-serif;
+}
+
+/* navbar styling */
+.navbar {
+    box-shadow: 0 2px 10px #0000001a; 
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* site name styling */
+.site-name {
+    font-weight: 500; 
+    margin-right: 5px;
+}
+
+/* logo styling */
+.logo-img {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* nav link styling */
+.btn-outline-secondary {
+    border: none !important;
+    color: #000 !important;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-outline-secondary:hover {
+    background-color: transparent !important;
+    transform: scale(1.1); /* increase text size on hover */
+}
+
+/* underline */
+.current-page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    background-color: pink; 
+    bottom: 0;
+    left: 0;
+}
+
+/* hide the underline on hover */
+.current-page:hover::after {
+    width: 0;
+}
+
+.nav-links {
+    margin-left: 10px;
+    font-size: 14px !important;
+}
+
+/* pink outline */
+.btn-outline-primary.login {
+    color: #FC8EAC;
+    border-color: #FC8EAC;
+    margin-right: 10px;
+}
+
+/* pink hover */
+.btn-outline-primary.login:hover {
+    background-color: #FC8EAC;
+    color: #fff;
+    border-color: #FC8EAC;
+}
+
+/* default login icon */
+.default-icon {
+    display: inline;
+}
+
+/* hidden by default, visible on hover */
+.hover-icon {
+    display: none;
+}
+
+/* login icon turns white when hovered over */
+.btn-outline-primary.login:hover .default-icon {
+    display: none;
+}
+
+.btn-outline-primary.login:hover .hover-icon {
+    display: inline;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.dropdown-item:active {
+    background-color: #A9A9A9 !important;
+    color: #fff !important;
+}
+
+/* footer background colour */
+.footer {
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+/* description of explore */
+.explore-desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.explore-desc h1 {
+    font-size: 30px;
+}
+
+.user-icon {
+    width: 23px; 
+    height: 20px; 
+    margin-right: 5px; /* margin for spacing between icon and text */
+    margin: 5px;
+}
+
+/* explore button and text inside image */
+.custom-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-card img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.custom-card:hover img {
+    filter: brightness(70%);
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.card-content h5,
+.card-content p {
+    text-shadow: none; 
+    font-weight: 500; /
+}
+
+.btn-explore {
+    border-color: #fff !important; 
+    color: #fff !important; 
+    width: 100px; /* button width */
+    font-weight: 500 !important;
+    border-width: 2px !important; 
+}
+
+.btn-explore:hover {
+    border-color: #000 !important; 
+    color: #fff !important; 
+    background-color: #000 !important; /* change background color on hover */
+}
+
+.card-content p {
+    padding-bottom: 80px !important; /* bottom padding to create space between button and description */
+}
+
+.explore-main-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.explore-sub-text {
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.full-width-container {
+    width: 100%;
+    background: url('/planetart/images/chasbg-extended.png') center center / cover no-repeat; 
+    border-radius: 5px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    height: 300px;
+    margin-bottom: 30px; /* margin-bottom to add space between the image and text */
+}
+
+.artist-details img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; /* make image circular */
+    margin-top: 10px; 
+}
+
+.artist-details p {
+    color: #fff; /* Text color */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.signup-text {
+    text-decoration: none;
+    color: #FC8EAC;
+    font-size: 16px; /* Set the default font size */
+    transition: font-size 0.3s; 
+}
+
+.signup-text:hover {
+    color: #000;
+    font-size: 18px; /* larger font size on hover */
+}
+
+.medium-column {
+    height: 300px;
+}
+
+/* individual artists */
+.img-fluid {
+    border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* shadow effect */
+    transition: box-shadow 0.3s ease; /* transition for smooth hover effect */
+}
+
+.img-fluid:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+}
+.artist-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 5px;
+}
+
+.artist-name {
+    color: #fff;
+    height: 35% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 5px;
+    padding: 5px;
+    }
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.artist-row {
+    margin-bottom: -80px; 
+}
+
+/* discussion forum */
+.comment-container {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.reply-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* reply button */
+.btn-reply {
+    margin-left: 10px;
+}
+
+/* welcome message */
+.ml-auto {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-message {
+    margin-right: 10px; 
+    margin-bottom: 0;  /* remove unwanted bottom margin */
+    font-size: 18px !important;
+}
+
+.full-width-container-van-gogh {
+    width: 100%;
+    background: url('/planetart/images/van-gogh-sunset.jpg') center center/cover; 
+    border-radius: 5px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    background-size: cover; /* ensure background image covers entire container */
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.full-width-container-volker-hermes {
+    width: 100%;
+    background: url('/planetart/images/volker.jpg') center center/cover; 
+    border-radius: 5px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    background-size: cover; /* Ensure background image covers entire container */
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.artist-banner-info h2 {
+    color: #fff; /* Text color */
+}
+
+.artist-details img {
+    width: 200px; 
+    height: 200px;    
+}
+
+.artist-banner-details p {
+    color: #fff; 
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+.artists-main-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    color: #3C4043;
+}
+
+.artists-sub-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #80868B;
+    margin-top: 10px;
+}
+
+.artist-discover {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3C4043;
+    margin-top: 40px;
+}
+
+.vincent-desc {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3C4043;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; 
+}
+
+.artists-main-quote {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3C4043;
+    margin-top: 50px;
+}
+
+.artists-sub-quote {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #80868B;
+}
+
+/* gallery artist */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* discussion forums */
+.grey-background {
+    background-color: #f0f0f0; 
+}
+
+.discussion-container {
+    display: flex;
+}
+
+/* Discussion title styles */
+.discussion-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Comment styles */
+.discussion-container .comment-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.discussion-container .comment {
+    margin: 0;
+}
+
+.discussion-container .comment-author {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Add Comment form styles */
+.discussion-container form {
+    margin-top: 20px;
+}
+
+.discussion-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.discussion-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discussion-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+.discussion-container footer {
+    margin-top: 50px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar styles */
+.discussion-container .navbar {
+    background-color: #007bff;
+    padding: 10px;
+    color: #fff;
+}
+
+.discussion-container .logo-img {
+    margin-right: 10px;
+}
+
+.discussion-container .site-name {
+    font-weight: bold;
+}
+
+.discussion-container .nav-links {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.discussion-container .welcome-message {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Account dropdown styles */
+.discussion-container .dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.discussion-container .dropdown-item {
+    color: #333;
+}
+
+.discussion-container .dropdown-divider {
+    border-top: 1px solid #ddd;
+}
+
+/* General body styles */
+.discussion-container body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* minimum height to ensure the container takes up the full viewport height */
+}
+
+.discussion-body {
+    border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+    transition: box-shadow 0.3s ease !important; /* transition for smooth hover effect */
+    margin-top: 50px !important; /* margin-top to create space between the header and discussion-body */
+    padding: 20px;
+    background-color: #fff;
+}
+
+.discussion-body:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+}
+.username-discussion {
+    font-size: 16px;
+}
+
+.discussion-name {
+    font-size: 26px;
+}
+
+.discussion-comment {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fullname-bold {
+    font-weight: bold !important;
+}
+
+.start-discussion-container,
+.view-discussion-container {
+    width: 50%;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+}
+
+/* comment box around each comment */
+.comment-box {
+    border-radius: 10px; /* border-radius to make images round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+    transition: box-shadow 0.3s ease !important; /* transition for smooth hover effect */
+    background-color: #fff !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.comment-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+}
+
+.comment-content {
+    margin-bottom: 10px;
+}
+
+.comment-content p {
+    margin: 0;
+}
+
+.user-forum-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* ellipsis menu */
+
+.delete-icon {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 8px; 
+}
+
+.ellipsis-icon {
+    width: 24px; 
+    height: 24px;
+    margin-left: auto;
+}
+
+.ellipsis-button {
+    margin-left: auto; /* Auto margin to push the button to the right within a flex container */
+    border: none; /* Remove default button border */
+    background-color: transparent; /* Set background to transparent to remove default background */
+    cursor: pointer; /* Set cursor to pointer for better interaction */
+}
+
+.report-icon {
+    width: 24px; 
+    height: 24px;
+    margin-left: auto;
+}
+
+.report-button {
+    margin-left: auto; /* Auto margin to push the button to the right within a flex container */
+    border: none; /* Remove default button border */
+    background-color: transparent; /* Set background to transparent to remove default background */
+    cursor: pointer; /* Set cursor to pointer for better interaction */
+}
+
+.close-icon {
+    width: 30px; 
+    height: 30px;
+    margin-left: auto;
+    border: none;
+}
+
+.close-button {
+    margin-left: auto; /* Auto margin to push the button to the right within a flex container */
+    border: none; /* Remove default button border */
+    background-color: transparent; /* Set background to transparent to remove default background */
+    cursor: pointer; /* Set cursor to pointer for better interaction */
+}
+
+/* for delete and edit comment */
+.dropdown-menu {
+    min-width: auto; /* minimum width */
+}
+
+.discussion-topic {
+    color: #3C4043; 
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.disscussion-thoughts {
+    color: #80868B;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.btn-add-comment-with-image {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-add-comment-with-image img {
+    width: 30px;
+    height: 30px;
+}
+
+#addCommentForm textarea {
+    width: 100%;
+    resize: none;
+}
+
+.btn-save-changes-with-image {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; 
+    margin-bottom: 20px;
+}
+
+.btn-save-changes-with-image img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Hover effect for send button */
+.btn-add-comment-with-image:hover img {
+    content: url('/planetart/images/send-hover.png');
+    opacity: 0.7;
+}
+
+.created-time {
+    color: #80868B;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.user-forum-send {
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.discussion-list-container {
+    width: 30%;
+    overflow-y: auto;
+    max-height: 70vh;
+    padding-right: 10px;
+}
+
+.comment-section-container {
+    width: 70%;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+.discussion-container {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.discussion-container:hover {
+    background-color: #f9f9f9;
+}
+
+.active-discussion {
+    background-color: #f9f9f9;
+}
+
+.comment-container {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* view discussion button */
+.btn-view-discussion {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 6px !important;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    text-decoration: none;
+    font-size: 14px !important;
+}
+
+/* Hover effect */
+.btn-view-discussion:hover {
+    background-color: darkgrey !important; 
+}
+
+/* delete discussion button */
+.btn-delete-discussion-red {
+    background-color: red !important;
+    color: white !important;
+    border-radius: 5px !important;
+    padding: 0.375rem 0.75rem;
+    text-decoration: none;
+    font-size: 14px !important;
+    margin-left: 5px !important;
+}
+
+/* Hover effect */
+.btn-delete-discussion-red:hover {
+    background-color: #f1807e !important; 
+}
+
+
+/* discussion back and next buttons */
+.btn-back-next {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 20px !important;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    text-decoration: none;
+    font-size: 14px !important;
+    margin-right: 20px !important;
+}
+
+/* Hover effect */
+.btn-delete-discussion:hover {
+    background-color: darkgrey !important; 
+}
+
+/* guidelines modal */
+#guidelinesPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Style for the overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* overlay will appear on top of other elements */
+}
+
+.comment-thread {
+    margin-bottom: 20px;
+}
+
+.reply-comment {
+    margin-left: 20px; /* indentation for replies */
+    border-left: 2px solid #ccc; /* separating line for replies */
+    padding-left: 10px; /* padding for separating line */
+}
+
+#editCommentForm {
+    display: flex;
+    align-items: flex-start;
+}
+
+#editCommentForm textarea {
+    flex: 1;
+    margin-right: 10px; 
+}
+
+.form-check-input:checked {
+    background-color: #FC8EAC;
+    border-color: #FC8EAC;
+}
+
+.admin-dashboard {
+    position: relative;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+    /* admin-dashboard */
+
+    .admin-dashboard {
+        position: relative;
+        min-height: calc(100vh - 200px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .admin-dashboard .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/planetart/images/mark-ps.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+    }
+    
+    .admin-dashboard .card {
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 50px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .admin-dashboard .card-body {
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* artistsuser background */
+    .artists-page {
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    .artists-page .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/planetart/images/mark-ps.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    /* comment area discussion-box */
+    .discussion-box {
+        border-radius: 10px; /* border-radius to make images round */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important; /* shadow effect */
+        transition: 0.3s ease !important; /* transition for smooth hover effect */
+        background-color: #fff !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .discussion-box:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* shadow on hover */
+    }
+
+    .discussion-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .discussion-thoughts {
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* privacy policy */
+    .modal-backdrop {
+        opacity: 0.5;
+    }
+
+    .success-message-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        transition: font-size 0.3s;
+    }
+
+    .success-message-link:hover {
+        color: #000;
+        font-size: 18px;
+    }
+    
+    .privacy-policy-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        transition: font-size 0.3s;
+    }
+    
+    .privacy-policy-link:hover {
+        color: #000;
+        font-size: 18px;
+    }
+
+    .required-asterisk {
+        color: red;
+    }
+
+    /*date of birth styling */
+    .input-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-group input[type="number"],
+    .input-group select {
+        flex: 1;
+        margin-right: 5px;
+    }
+
+    .input-group input[type="number"]::placeholder,
+    .input-group select option:first-child {
+        color: #999;
+    }
+
+    .background-colour {
+        background-color: #FAFAF7; 
+        padding: 40px 0;
+    }
+    
+    /* discussion forum background */
+    .page-container {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/planetart/images/mark-ps.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    /* styling for 'dicussions' title text */
+    .discussion-main-text {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
